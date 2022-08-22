@@ -38,3 +38,7 @@ allowTouchMove : true, // (false-스와이핑안됨)버튼으로만 슬라이드
 watchOverflow : true // 슬라이드가 1개 일 때 pager, button 숨김 여부 설정
 slidesOffsetBefore : number, // 슬라이드 시작 부분 여백
 slidesOffsetAfter : number, 
+
+
+
+*display: none; 시 슬라이드 작동안하면 observer: true, observeParents: true,를 줘서 해당부모, 해당요소 감지하여 DOM변화시, 스와이퍼를 초기화시켜준다. (slick) variableWidth: true,
